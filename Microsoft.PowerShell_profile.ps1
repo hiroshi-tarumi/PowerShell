@@ -9,5 +9,28 @@ Import-Module posh-git
 Import-Module oh-my-posh
 Import-Module -Name Terminal-Icons
 
-Set-PoshPrompt -Theme blue-owl
+# themes ok
+	# Set-PoshPrompt -Theme blue-owl 
+	# set-poshprompt -theme atomic
+	# set-poshprompt -theme jv-sitecorian
+    # set-poshprompt -theme 
 
+# プロファイル(Microsoft.PowerShell_profile.ps1)をカスタマイズし設定を永続化
+if ($env:WT_PROFILE_ID) {
+
+    # Windows Terminalから実行されたときだけ変更する設定をここに記述する
+    # Import-Module oh-my-posh
+
+        Set-PoshPrompt -Theme jv-sitecorian
+
+    }Else{
+
+    # Import-Module oh-my-posh
+
+        Set-PoshPrompt -Theme blue-owl
+
+    }
+# (optional) せっかくなのでPSReadlineのカスタマイズも加えてみる
+
+    Set-PSReadLineOption -PredictionSource History
+    Set-PSReadLineKeyHandler -Key "Ctrl+f" -Function ForwardWord
