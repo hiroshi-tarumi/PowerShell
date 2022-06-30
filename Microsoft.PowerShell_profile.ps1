@@ -9,4 +9,3 @@ Import-Module -Name Terminal-Icons
 
 # Set-PoshPrompt -Theme blue-owl
 
-set-alias graph git-log
