@@ -9,5 +9,5 @@ Import-Module posh-git
 Import-Module oh-my-posh
 Import-Module -Name Terminal-Icons
 
-Set-PoshPrompt -Theme blue-owl
+Set-PoshPrompt -Theme blue-owk.omp
 
