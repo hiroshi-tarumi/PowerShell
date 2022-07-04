@@ -21,13 +21,14 @@ if ($env:WT_PROFILE_ID) {
     # Windows Terminalから実行されたときだけ変更する設定をここに記述する
     # Import-Module oh-my-posh
 
-        Set-PoshPrompt -Theme jv-sitecorian
+        # Set-PoshPrompt -Theme blue-owl
+        oh-my-posh init pwsh --config ~/desktop/tarumi/themes/slim.omp.json | Invoke-Expression
 
     }Else{
 
     # Import-Module oh-my-posh
 
-        Set-PoshPrompt -Theme blue-owl
+        Set-PoshPrompt -Theme kali
 
     }
 # (optional) せっかくなのでPSReadlineのカスタマイズも加えてみる
